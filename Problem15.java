@@ -1,3 +1,8 @@
+/*
+	The number of paths can be found using the central binomial coefficients
+	2n choose n  OR (2n)! / n!^2
+*/
+
 import java.math.BigInteger;
 
 class Problem15{
