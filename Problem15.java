@@ -8,9 +8,9 @@ import java.math.BigInteger;
 class Problem15{
 	public static void main(String[] args){
 		int dimension = 20;
-		BigInteger answer = new BigInteger("0");
-		BigInteger numerator = new BigInteger("0");
-		BigInteger denominator = new BigInteger("0");
+		BigInteger answer = BigInteger.ZERO;
+		BigInteger numerator = BigInteger.ZERO;
+		BigInteger denominator = BigInteger.ZERO;
 		
 		numerator = new BigInteger(factorial(2 * dimension));
 		denominator = new BigInteger(factorial(dimension)).pow(2);
