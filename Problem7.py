@@ -15,7 +15,7 @@ What is the 10 001st prime number?
 import math
 
 def prime(n):
-    for x in range(2, int(math.floor(math.sqrt(n))+1)):
+    for x in range(2, int(math.sqrt(n)+1)):
         if(n % x == 0):
             return False
     return True

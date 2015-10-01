@@ -37,7 +37,7 @@ def numOfDiv(number):
     while(True):
         triNum = triNumGen(x)
         #print "Trinum: " + str(triNum)
-        for y in range(2, int(math.floor(math.sqrt(triNum)))):
+        for y in range(2, int(math.sqrt(triNum))):
             if(triNum % y == 0):
                 divCounter += 2
                 #print divCounter
