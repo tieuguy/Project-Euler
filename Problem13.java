@@ -19,17 +19,17 @@ class Problem13{
 		
 		// Open the file
 		try(BufferedReader br = new BufferedReader(new FileReader("D:\\Programming\\ProjectEuler\\src\\file.txt"))) {
-	        String line = br.readLine();
+			String line = br.readLine();
 
-	        // copy numbers from file into arraylist
-	        while (line != null) {
-	        	lon.add(line);
-	            line = br.readLine();
-	        }
-	    }catch(IOException e){
-	    	System.err.println("There is an IO exception: " + e);
+			// copy numbers from file into arraylist
+			while (line != null) {
+				lon.add(line);
+				line = br.readLine();
+			}
+		}catch(IOException e){
+			System.err.println("There is an IO exception: " + e);
 			System.exit(1);
-	    }
+		}
 		
 		// This loop applies the addition to each column of numbers at a time
 		for(int i = 50; i != 0; i--){
