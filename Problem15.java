@@ -8,14 +8,11 @@ import java.math.BigInteger;
 class Problem15{
 	public static void main(String[] args){
 		int dimension = 20;
-		BigInteger answer = BigInteger.ZERO;
-		BigInteger numerator = BigInteger.ZERO;
-		BigInteger denominator = BigInteger.ZERO;
 		
-		numerator = factorial(2 * dimension);
-		denominator = factorial(dimension).pow(2);
+		BigInteger numerator = factorial(2 * dimension);
+		BigInteger denominator = factorial(dimension).pow(2);
 		
-		answer = numerator.divide(denominator);
+		BigInteger answer = numerator.divide(denominator);
 		
 		System.out.println("For a " + dimension + " x " + dimension + " grid, there are " + answer + " paths");
 	}
