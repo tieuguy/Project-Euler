@@ -31,21 +31,16 @@ def isItPalindrome(num):
     digit4 = ((num % 10000) - (num % 1000))/1000
     digit5 = ((num % 100000) - (num % 10000))/10000
     digit6 = (num - (num % 100000))/100000
-    if(digit1 == digit6):
-        if(digit2 == digit5):
-            if(digit3 == digit4):
-                return True
-    if(digit6 == 0):
-        if(digit1 == digit5):
-            if(digit2 == digit4):
-                return True
+    if (digit1 == digit6) and (digit2 == digit5) and (digit3 == digit4):
+        return True
+    if digit6 == 0 and digit1 == digit5 and digit2 == digit4:
+        return True
     return False
 
 #print isItPalindrome(998001)
 largest = 0
 for x in range(999, 100, -1):
     for y in range(999, 100, -1):
-        if(isItPalindrome(x * y)):
-            if((x * y) > largest):
-                largest = (x * y)
+        if (isItPalindrome(x * y)) and ((x * y) > largest):
+            largest = (x * y)
 print largest
