@@ -39,8 +39,8 @@ def isItPalindrome(num):
 
 #print isItPalindrome(998001)
 largest = 0
-for x in range(999, 100, -1):
-    for y in range(999, 100, -1):
+for x in range(999, 99, -1):
+    for y in range(999, 99, -1):
         if (isItPalindrome(x * y)) and ((x * y) > largest):
             largest = (x * y)
 print largest
