@@ -57,10 +57,7 @@ def siftStringBy5(numbers):
     largest = product
     numbersLength = len(numbers)
     for x in range(5, numbersLength):
-        if(int(numbers[x-5]) == 0 or int(numbers[x]) == 0):
-            product = int(numbers[x-4]) * int(numbers[x-3]) * int(numbers[x-2]) * int(numbers[x-1]) * int(numbers[x-0])
-        else:
-            product = product / int(numbers[x-5]) * int(numbers[x])
+        product = int(numbers[x-4]) * int(numbers[x-3]) * int(numbers[x-2]) * int(numbers[x-1]) * int(numbers[x-0])
         largest = max(product, largest)
     return largest
 

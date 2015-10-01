@@ -16,7 +16,7 @@ Find the sum of all the primes below two million.
 import math
 
 def prime(n):
-    for x in range(2, int(math.floor(math.sqrt(n))+1)):
+    for x in range(2, int(math.sqrt(n)+1)):
         if(n % x == 0):
             return False
     return True

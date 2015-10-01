@@ -28,8 +28,8 @@ def sumOfMultiples(n, limit):
     counter = 1
     sum = 0
     while ((n * counter) < limit):
-        sum = sum + (n * counter)
-        counter = counter + 1
+        sum += (n * counter)
+        counter += 1
     return sum
 
 answer = sumOfMultiples(3, 1000) + sumOfMultiples(5, 1000) - sumOfMultiples(15, 1000)
