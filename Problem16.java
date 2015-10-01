@@ -6,8 +6,9 @@ class Problem16{
 		BigInteger bi = new BigInteger("2");
 		
 		bi = bi.pow(1000);
-		for(int i = 0; i < bi.toString().length(); i++){
-			sum += Integer.parseInt(bi.toString().substring(i, i + 1));
+		String s = bi.toString();
+		for(int i = 0; i < s.length(); i++){
+			sum += Integer.parseInt(s.substring(i, i + 1));
 		}
 		System.out.println("The sum of the digits of 2^1000 is " + sum);
 	}
