@@ -21,9 +21,9 @@ class Problem15{
 	}
 	
 	public static BigInteger factorial(int n){
-		BigInteger fact = new BigInteger(Integer.toString(n));
+		BigInteger fact = BigInteger.valueOf(n);
 		for(int i = n; i > 1; i--){
-			fact = fact.multiply(new BigInteger(Integer.toString(i - 1)));
+			fact = fact.multiply(BigInteger.valueOf(i - 1));
 		}
 		return fact;
 	}
