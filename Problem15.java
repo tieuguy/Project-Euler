@@ -18,9 +18,9 @@ class Problem15{
 	}
 	
 	public static BigInteger factorial(int n){
-		BigInteger fact = BigInteger.valueOf(n);
-		for(int i = n; i > 1; i--){
-			fact = fact.multiply(BigInteger.valueOf(i - 1));
+		BigInteger fact = BigInteger.ONE;
+		for(int i = 1; i <= n; i++){
+			fact = fact.multiply(BigInteger.valueOf(i));
 		}
 		return fact;
 	}
