@@ -5,7 +5,7 @@ class Problem16{
 		int sum = 0;
 		BigInteger bi = new BigInteger("2");
 		
-		bi = new BigInteger(bi.pow(1000).toString());
+		bi = bi.pow(1000);
 		for(int i = 0; i < bi.toString().length(); i++){
 			sum += Integer.parseInt(bi.toString().substring(i, i + 1));
 		}

@@ -12,20 +12,20 @@ class Problem15{
 		BigInteger numerator = BigInteger.ZERO;
 		BigInteger denominator = BigInteger.ZERO;
 		
-		numerator = new BigInteger(factorial(2 * dimension));
-		denominator = new BigInteger(factorial(dimension)).pow(2);
+		numerator = factorial(2 * dimension);
+		denominator = factorial(dimension).pow(2);
 		
-		answer = new BigInteger(numerator.divide(denominator).toString());
+		answer = numerator.divide(denominator);
 		
 		System.out.println("For a " + dimension + " x " + dimension + " grid, there are " + answer + " paths");
 	}
 	
-	public static String factorial(int n){
+	public static BigInteger factorial(int n){
 		BigInteger fact = new BigInteger(Integer.toString(n));
 		for(int i = n; i > 1; i--){
 			fact = fact.multiply(new BigInteger(Integer.toString(i - 1)));
 		}
-		return fact.toString();
+		return fact;
 	}
 	
 }
